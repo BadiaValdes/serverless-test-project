@@ -70,3 +70,6 @@ Which should result in response similar to the following:
     "body": "{\n  \"message\": \"Go Serverless v3.0! Your function executed successfully!\",\n  \"input\": \"\"\n}"
 }
 ```
+### More
+
+For more information please go to this repository: https://github.com/BadiaValdes/docs/blob/doc/nodeJs/serverless.md

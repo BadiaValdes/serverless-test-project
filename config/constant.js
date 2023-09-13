@@ -2,6 +2,8 @@
 module.exports = class Constants {
     static tableName = 'itemTable';
 
+    static items = [];
+
     static infokeConfig = {
         FunctionName: "crud-dynamo-dev-chain2", // Name of the function convention service-stage-function
         InvocationType: "RequestResponse" , //"Event" || "RequestResponse" || "DryRun",

@@ -8,7 +8,6 @@ const { DeleteCommand } = require("@aws-sdk/lib-dynamodb");
 module.exports.deleteItem = async (event) =>  {
     let body = null;
     try{
-    let itemData = JSON.parse(event.body);
     const id = parseInt(event.pathParameters.id);
 
     await database().send(new DeleteCommand({TableName: options.tableName, Key: {
