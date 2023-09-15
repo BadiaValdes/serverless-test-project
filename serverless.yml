@@ -96,3 +96,10 @@ functions:
       - httpApi: # Evento tipo http (Accediendo a la función mediante una llamada http)
           path: / # Path o dirección url de acceso a la función
           method: get # Tipo de petición a realizar
+
+  middy:
+    handler: errorHandle/throwError.middyWrapper
+    events:
+      - httpApi:
+          path: /error/{id}
+          method: get

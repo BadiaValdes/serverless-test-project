@@ -18,7 +18,7 @@ module.exports.chain1 = async (event, context, callback) => {
     return {
         statusCode: 200,
         body: JSON.stringify(
-          'nice',
+          `Respuesta del hijo - ${resp.Payload.transformToString('utf-8')}`,
           null,
           2
         ),

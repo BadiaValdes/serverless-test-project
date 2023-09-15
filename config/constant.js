@@ -21,4 +21,12 @@ module.exports = class Constants {
             secretAccessKey: 'DEFAULT_SECRET',
           },
     }
+
+    static bunyanLogType = {
+        info: 'info',
+        debug: 'debug',
+        error: 'error',
+        setContext: 'setContext',
+        warn: 'warn',
+    }
 }
